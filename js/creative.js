@@ -40,7 +40,7 @@
   $(window).scroll(navbarCollapse);
 
   // Magnific popup calls
-  $('#portfolio').magnificPopup({
+  $('#portfolio').({
     delegate: 'a',
     type: 'image',
     tLoading: 'Loading image #%curr%...',
@@ -50,9 +50,6 @@
       navigateByImgClick: true,
       preload: [0, 1]
     },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
   });
 
 })(jQuery); // End of use strict
